@@ -1,0 +1,13 @@
+schema-version: 1
+skins:
+  MHF_Dragon: "MHF_Dragon"
+  MHF_Chicken: "MHF_Chicken"
+  MHF_Enderman: "MHF_Enderman"
+  MHF_Blaze: "MHF_Blaze"
+  MHF_EnderDragon: "MHF_EnderDragon"
+  MHF_Ghast: "MHF_Ghast"
+  MHF_Wolf: "MHF_Wolf"
+  MHF_Pig: "MHF_Pig"
+  MHF_SnowGolem: "MHF_SnowGolem"
+  MHF_Skeleton: "MHF_Skeleton"
+  MHF_Ocelot: "MHF_Ocelot"

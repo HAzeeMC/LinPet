@@ -1,0 +1,112 @@
+name: LinPet
+version: ${project.version}
+main: dev.sleepwithyourmom.linx.linpet.LinPetPlugin
+api-version: '1.21'
+author: LinDev_
+description: Zero-entity jewelry pet plugin.
+folia-supported: true
+softdepend:
+  - Vault
+  - PlaceholderAPI
+  - PlayerPoints
+  - CMI
+  - UltraEconomy
+permissions:
+  linpet.user:
+    description: Allows opening Lin'Pet.
+    default: true
+  linpet.user.equip:
+    description: Allows equipping pets.
+    default: true
+  linpet.user.unequip:
+    description: Allows unequipping pets.
+    default: true
+  linpet.user.info:
+    description: Allows viewing pet information.
+    default: true
+  linpet.user.skill:
+    description: Allows opening pet skills.
+    default: true
+  linpet.user.quest:
+    description: Allows opening pet quests.
+    default: true
+  linpet.user.shop:
+    description: Allows buying shop pets.
+    default: true
+  linpet.auction.view:
+    description: Allows viewing auctions.
+    default: true
+  linpet.auction.bid:
+    description: Allows bidding on auctions.
+    default: true
+  linpet.auction.sell:
+    description: Allows selling pets through auctions.
+    default: true
+  linpet.admin:
+    description: Allows Lin'Pet admin command root.
+    default: op
+  linpet.admin.give:
+    description: Allows giving pets.
+    default: op
+  linpet.admin.remove:
+    description: Allows removing pets.
+    default: op
+  linpet.admin.setlevel:
+    description: Allows setting pet levels.
+    default: op
+  linpet.admin.setexp:
+    description: Allows setting pet experience.
+    default: op
+  linpet.admin.setrank:
+    description: Allows assigning Lin'Pet ranks.
+    default: op
+  linpet.admin.setskin:
+    description: Allows setting pet skins.
+    default: op
+  linpet.admin.setattribute:
+    description: Allows changing pet attributes.
+    default: op
+  linpet.admin.setbuff:
+    description: Allows changing pet potion buffs.
+    default: op
+  linpet.admin.reload:
+    description: Allows reloading Lin'Pet configuration.
+    default: op
+  linpet.admin.blacklist:
+    description: Allows editing blacklisted worlds.
+    default: op
+  linpet.admin.view:
+    description: Allows viewing another player's equipment.
+    default: op
+  linpet.admin.edit:
+    description: Allows editing another player's equipment.
+    default: op
+  linpet.admin.auction:
+    description: Allows managing system auctions.
+    default: op
+  linpet.admin.wipe:
+    description: Allows wiping a player's pets.
+    default: op
+  linpet.admin.clone:
+    description: Allows cloning pets between players.
+    default: op
+  linpet.admin.*:
+    description: Wildcard for all Lin'Pet admin permissions.
+    default: op
+    children:
+      linpet.admin: true
+      linpet.admin.give: true
+      linpet.admin.remove: true
+      linpet.admin.setlevel: true
+      linpet.admin.setexp: true
+      linpet.admin.setrank: true
+      linpet.admin.setskin: true
+      linpet.admin.setattribute: true
+      linpet.admin.setbuff: true
+      linpet.admin.reload: true
+      linpet.admin.blacklist: true
+      linpet.admin.view: true
+      linpet.admin.edit: true
+      linpet.admin.auction: true
+      linpet.admin.wipe: true
+      linpet.admin.clone: true

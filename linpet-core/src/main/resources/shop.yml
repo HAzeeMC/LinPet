@@ -1,0 +1,8 @@
+schema-version: 1
+items:
+  golden_dragon:
+    price: 1000000
+    daily-limit: 1
+  royal_phoenix:
+    price: 850000
+    daily-limit: 1

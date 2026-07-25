@@ -1,0 +1,43 @@
+schema-version: 1
+trees:
+  golden_dragon:
+    skills:
+      golden_claw:
+        branch: "attack"
+        display-name: "Móng Vuốt Vàng"
+        description: "Tăng sát thương cơ bản."
+        cost: 1
+        required-level: 2
+        prerequisites: []
+        buffs: []
+        attributes:
+          - attribute: "minecraft:attack_damage"
+            amount: 1.0
+            operation: ADD_NUMBER
+      royal_guard:
+        branch: "defense"
+        display-name: "Hộ Vệ Hoàng Kim"
+        description: "Tăng giáp sau khi mở Móng Vuốt Vàng."
+        cost: 2
+        required-level: 5
+        prerequisites:
+          - golden_claw
+        buffs: []
+        attributes:
+          - attribute: "minecraft:armor"
+            amount: 2.0
+            operation: ADD_NUMBER
+  royal_phoenix:
+    skills:
+      ember_heart:
+        branch: "support"
+        display-name: "Trái Tim Lửa"
+        description: "Tăng kháng lửa Lin'Pet."
+        cost: 1
+        required-level: 2
+        prerequisites: []
+        buffs: []
+        attributes:
+          - attribute: "linpet:fire_resist"
+            amount: 10.0
+            operation: ADD_NUMBER

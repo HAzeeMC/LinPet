@@ -1,0 +1,8 @@
+schema-version: 1
+quests:
+  daily_hunter:
+    type: "daily"
+    condition: "kill-mob"
+    target: 50
+    reward-exp: 500
+    reward-skill-points: 0

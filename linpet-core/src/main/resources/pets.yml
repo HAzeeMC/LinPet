@@ -1,0 +1,244 @@
+schema-version: 1
+
+golden_dragon:
+  display-name: "Rồng Vàng"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_Dragon"
+  base-buffs:
+    - type: POTION
+      effect: REGENERATION
+      amplifier: 2
+      duration: -1
+    - type: POTION
+      effect: RESISTANCE
+      amplifier: 1
+      duration: -1
+  attributes:
+    - attribute: "minecraft:generic.attack_damage"
+      amount: 5.0
+      operation: ADD_NUMBER
+    - attribute: "minecraft:generic.armor"
+      amount: 20.0
+      operation: ADD_NUMBER
+    - attribute: "linpet:health_regen"
+      amount: 1.0
+      operation: ADD_NUMBER
+    - attribute: "linpet:critical_chance"
+      amount: 20.0
+      operation: ADD_NUMBER
+  special-abilities:
+    - "Hồi máu, tăng sát thương và giáp khi trang bị."
+
+royal_phoenix:
+  display-name: "Phượng Hoàng Hoàng Gia"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_Chicken"
+  base-buffs:
+    - type: POTION
+      effect: FIRE_RESISTANCE
+      amplifier: 0
+      duration: -1
+  attributes:
+    - attribute: "minecraft:max_health"
+      amount: 6.0
+      operation: ADD_NUMBER
+    - attribute: "linpet:fire_resist"
+      amount: 30.0
+      operation: ADD_NUMBER
+  special-abilities:
+    - "Kháng lửa và tăng máu tối đa."
+
+shadow_king:
+  display-name: "Vua Bóng Tối"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_Enderman"
+  base-buffs:
+    - type: POTION
+      effect: SPEED
+      amplifier: 1
+      duration: -1
+  attributes:
+    - attribute: "minecraft:attack_damage"
+      amount: 4.0
+      operation: ADD_NUMBER
+    - attribute: "linpet:dodge"
+      amount: 8.0
+      operation: ADD_NUMBER
+  special-abilities:
+    - "Tăng tốc và né tránh."
+
+thunder_god:
+  display-name: "Thần Sấm"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_Blaze"
+  base-buffs:
+    - type: POTION
+      effect: HASTE
+      amplifier: 1
+      duration: -1
+  attributes:
+    - attribute: "minecraft:attack_speed"
+      amount: 0.15
+      operation: ADD_SCALAR
+  special-abilities:
+    - "Tăng tốc đánh."
+
+mystic_ender_dragon:
+  display-name: "Rồng Ender Huyền Bí"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_EnderDragon"
+  base-buffs:
+    - type: POTION
+      effect: NIGHT_VISION
+      amplifier: 0
+      duration: -1
+  attributes:
+    - attribute: "minecraft:armor_toughness"
+      amount: 4.0
+      operation: ADD_NUMBER
+  special-abilities:
+    - "Tăng độ cứng giáp."
+
+mini_cthulhu:
+  display-name: "Mini Cthulhu"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_Ghast"
+  base-buffs:
+    - type: POTION
+      effect: WATER_BREATHING
+      amplifier: 0
+      duration: -1
+  attributes:
+    - attribute: "linpet:magic_resist"
+      amount: 15.0
+      operation: ADD_NUMBER
+  special-abilities:
+    - "Hỗ trợ sống sót dưới nước."
+
+immortal_werewolf:
+  display-name: "Người Sói Bất Tử"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_Wolf"
+  base-buffs:
+    - type: POTION
+      effect: STRENGTH
+      amplifier: 0
+      duration: -1
+  attributes:
+    - attribute: "linpet:lifesteal"
+      amount: 5.0
+      operation: ADD_NUMBER
+  special-abilities:
+    - "Hút máu từ sát thương gây ra."
+
+fairy_queen:
+  display-name: "Nữ Hoàng Tiên"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_Pig"
+  base-buffs:
+    - type: POTION
+      effect: LUCK
+      amplifier: 1
+      duration: -1
+  attributes:
+    - attribute: "linpet:health_regen"
+      amount: 0.5
+      operation: ADD_NUMBER
+  special-abilities:
+    - "Tăng may mắn và hồi phục."
+
+ice_titan:
+  display-name: "Khổng Lồ Băng"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_SnowGolem"
+  base-buffs:
+    - type: POTION
+      effect: RESISTANCE
+      amplifier: 1
+      duration: -1
+  attributes:
+    - attribute: "minecraft:armor"
+      amount: 12.0
+      operation: ADD_NUMBER
+  special-abilities:
+    - "Tăng phòng thủ."
+
+grim_reaper:
+  display-name: "Thần Chết"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_Skeleton"
+  base-buffs:
+    - type: POTION
+      effect: STRENGTH
+      amplifier: 1
+      duration: -1
+  attributes:
+    - attribute: "linpet:critical_damage"
+      amount: 25.0
+      operation: ADD_NUMBER
+  special-abilities:
+    - "Tăng sát thương chí mạng."
+
+red_dragon:
+  display-name: "Rồng Đỏ"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_Dragon"
+  base-buffs:
+    - type: POTION
+      effect: FIRE_RESISTANCE
+      amplifier: 0
+      duration: -1
+  attributes:
+    - attribute: "minecraft:attack_damage"
+      amount: 4.0
+      operation: ADD_NUMBER
+  special-abilities:
+    - "Sát thương và kháng lửa."
+
+sacred_white_tiger:
+  display-name: "Bạch Hổ Linh Thiêng"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_Ocelot"
+  base-buffs:
+    - type: POTION
+      effect: SPEED
+      amplifier: 1
+      duration: -1
+  attributes:
+    - attribute: "linpet:block_chance"
+      amount: 6.0
+      operation: ADD_NUMBER
+  special-abilities:
+    - "Tăng tốc và khả năng chặn đòn."
+
+ice_phoenix:
+  display-name: "Phượng Hoàng Băng"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_Chicken"
+  base-buffs:
+    - type: POTION
+      effect: SLOW_FALLING
+      amplifier: 0
+      duration: -1
+  attributes:
+    - attribute: "linpet:fall_damage_reduction"
+      amount: 30.0
+      operation: ADD_NUMBER
+  special-abilities:
+    - "Giảm sát thương rơi."
+
+storm_dragon:
+  display-name: "Rồng Bão"
+  rarity: "Ultra Rare"
+  default-skin: "MHF_Dragon"
+  base-buffs:
+    - type: POTION
+      effect: JUMP_BOOST
+      amplifier: 1
+      duration: -1
+  attributes:
+    - attribute: "minecraft:movement_speed"
+      amount: 0.08
+      operation: ADD_SCALAR
+  special-abilities:
+    - "Tăng di chuyển và nhảy."

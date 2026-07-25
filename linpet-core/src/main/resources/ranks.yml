@@ -1,0 +1,17 @@
+schema-version: 1
+ranks:
+  vip:
+    display-name: "VIP"
+    slots: 5
+    auction-fee-discount-percent: 5.0
+    bypass-blacklist: false
+  elite:
+    display-name: "Elite"
+    slots: 10
+    auction-fee-discount-percent: 10.0
+    bypass-blacklist: false
+  legend:
+    display-name: "Legend"
+    slots: 20
+    auction-fee-discount-percent: 20.0
+    bypass-blacklist: true

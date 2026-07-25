@@ -1,0 +1,77 @@
+settings:
+  language: "auto"
+  enable-folia: true
+  database:
+    type: "sqlite"
+    host: "localhost"
+    port: 3306
+    name: "linpet"
+    user: "root"
+    password: ""
+    pool-size: 10
+  default-pet-limit: 5
+  max-slots-per-player: 20
+  enable-hardcore-death: false
+
+exp-rates:
+  kill-mob: 10.0
+  mining: 2.0
+  farming: 1.5
+  fishing: 3.0
+  breeding: 5.0
+  quest: 20.0
+
+buff-scaling:
+  enabled: true
+  scaling-per-level: 0.02
+  max-level: 100
+
+economy:
+  auto-detect: true
+  force-plugin: "Vault"
+  currency-symbol: "$"
+
+buff:
+  active-skill-cooldown: 30
+
+slots:
+  default: 3
+  buy-price-per-slot: 5000
+
+blacklist:
+  worlds:
+    - "world_nether"
+    - "world_end"
+
+particles:
+  Common: { type: "NONE" }
+  Uncommon: { type: "SPELL_MOB", color: "#55FF55" }
+  Rare: { type: "SPELL_MOB", color: "#5555FF" }
+  Epic: { type: "SPELL_MOB", color: "#FFAA00" }
+  Legendary: { type: "DRAGON_BREATH", color: "#FFAA00" }
+  Mythic: { type: "TOTEM_OF_UNDYING", color: "#AA00FF" }
+  Ultra_Rare: { type: "END_ROD", color: "#FFD700" }
+
+auction:
+  enabled: true
+  duration-minutes: 30
+  min-bid-increment: 1
+  system-pets:
+    - golden_dragon
+    - royal_phoenix
+    - shadow_king
+    - thunder_god
+    - mystic_ender_dragon
+    - mini_cthulhu
+    - immortal_werewolf
+    - fairy_queen
+    - ice_titan
+    - grim_reaper
+    - red_dragon
+    - sacred_white_tiger
+    - ice_phoenix
+    - storm_dragon
+  starting-price: 1000000
+  allow-player-auction: true
+  tax-percent: 5.0
+  cooldown-between-auctions: 3600
