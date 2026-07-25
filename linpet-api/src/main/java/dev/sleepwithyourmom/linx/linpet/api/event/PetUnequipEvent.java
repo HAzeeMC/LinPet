@@ -1,0 +1,96 @@
+package dev.sleepwithyourmom.linx.linpet.api.event;
+
+import java.util.UUID;
+import org.bukkit.entity.Player;
+import org.bukkit.event.Cancellable;
+import org.bukkit.event.Event;
+import org.bukkit.event.HandlerList;
+import org.bukkit.inventory.ItemStack;
+
+/**
+ * Fired before a pet is removed from a Lin'Pet equipment slot.
+ */
+public class PetUnequipEvent extends Event implements Cancellable {
+    private static final HandlerList HANDLERS = new HandlerList();
+
+    private final Player player;
+    private final UUID petInstanceId;
+    private final int slot;
+    private final ItemStack petItem;
+    private boolean cancelled;
+
+    /**
+     * Creates an unequip event.
+     *
+     * @param player player unequipping the pet
+     * @param petInstanceId pet instance id
+     * @param slot zero-based equipment slot
+     * @param petItem item representation to return
+     */
+    public PetUnequipEvent(Player player, UUID petInstanceId, int slot, ItemStack petItem) {
+        this.player = player;
+        this.petInstanceId = petInstanceId;
+        this.slot = slot;
+        this.petItem = petItem.clone();
+    }
+
+    /**
+     * Returns the player unequipping the pet.
+     *
+     * @return player
+     */
+    public Player player() {
+        return player;
+    }
+
+    /**
+     * Returns the pet instance identifier.
+     *
+     * @return pet instance id
+     */
+    public UUID petInstanceId() {
+        return petInstanceId;
+    }
+
+    /**
+     * Returns the source equipment slot.
+     *
+     * @return zero-based slot
+     */
+    public int slot() {
+        return slot;
+    }
+
+    /**
+     * Returns a clone of the item representation.
+     *
+     * @return cloned pet item
+     */
+    public ItemStack petItem() {
+        return petItem.clone();
+    }
+
+    @Override
+    public boolean isCancelled() {
+        return cancelled;
+    }
+
+    @Override
+    public void setCancelled(boolean cancelled) {
+        this.cancelled = cancelled;
+    }
+
+    @Override
+    public HandlerList getHandlers() {
+        return HANDLERS;
+    }
+
+    /**
+     * Returns Bukkit handlers for this event.
+     *
+     * @return handler list
+     */
+    public static HandlerList getHandlerList() {
+        return HANDLERS;
+    }
+}
